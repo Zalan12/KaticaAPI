@@ -1,0 +1,92 @@
+//-------------------------Categories----------------------------
+
+
+### GET data from kategories
+
+GET HTTP://localhost:3000/
+Content-Type: application/json
+
+
+### GET data from categ
+
+GET HTTP://localhost:3000/categories
+Content-Type: application/json
+
+### GET data from categ by ID
+
+GET HTTP://localhost:3000/categories/2
+Content-Type: application/json
+
+### DELETE data from categ by ID
+
+DELETE HTTP://localhost:3000/categories/6
+Content-Type: application/json
+
+### POST category
+
+POST HTTP://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "nev":"Desszertek"
+}
+
+
+### PATCH category by id
+
+PATCH HTTP://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "nev":"Subidub"
+}
+
+//-------------------------Trafics----------------------------
+
+### GET data from categ
+
+GET HTTP://localhost:3000/traffics
+Content-Type: application/json
+
+### GET data from categ by ID
+
+GET HTTP://localhost:3000/traffics/248
+Content-Type: application/json
+
+
+### POST traffic data
+POST HTTP://localhost:3000/traffics
+Content-Type: application/json
+
+{
+    "termek":"Skibidi sigma",
+    "vevo":"Gooni Bálint",
+    "kategoriaid":1,
+    "egyseg":"szelet",
+    "nettoar":6767,
+    "mennyiseg":6,
+    "kiadva":0
+}
+
+###PATCH trafic data via id
+
+PATCH  http://localhost:3000/traffics/258
+Content-Type: application/json
+
+{
+    "termek":"Gyros tál"
+}
+
+###DELETE traffic data via id
+
+DELETE http://localhost:3000/traffics/259
+Content-Type: application/json
+
+
+
+//---------------------STATS------------------------
+
+
+###GET minden data
+GET http://localhost:3000/stats
+Content-Type: application/json
