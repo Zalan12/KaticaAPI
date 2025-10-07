@@ -88,5 +88,5 @@ Content-Type: application/json
 
 
 ###GET minden data
-GET http://localhost:3000/stats
+GET http://localhost:3000/stats/
 Content-Type: application/json
